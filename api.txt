@@ -1,0 +1,2 @@
+api url=https://api.openweathermap.org/data/2.5/weather?q=germany&appid=&units=metric
+api key = af12d905eaef741275b5ac56a11e3f25
