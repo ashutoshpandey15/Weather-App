@@ -12,7 +12,7 @@ async function checkWeatherData(city){
         //&appid is a url query parameter in which we pass the api key
         //showing the response in json format
         const data = await response.json();
-        console.log(data);
+        
 
         document.querySelector(".city").innerText = data.name;
         document.querySelector(".temp").innerText = Math.round(data.main.temp)+"°C";
@@ -31,6 +31,7 @@ async function checkWeatherData(city){
         }else if(data.weather[0].main=="Mist"){
             weatherIcon.src = "images/mist.png";
         }
+        document.querySelector(".weather").style.display = "block";
 
 }
 
